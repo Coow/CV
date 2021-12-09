@@ -8,7 +8,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { AiOutlineMail, AiFillGithub, AiOutlinePhone } from 'react-icons/ai'
 import { MdWork } from 'react-icons/md';
-import { FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaReact } from 'react-icons/fa';
 import { GrVmware } from 'react-icons/gr';
 import InfoLine from './Components/InfoLine';
 
@@ -35,6 +35,9 @@ function App() {
 							<InfoLine icon={<AiOutlineMail/>} text={`eirik@skarding.no`}/>
 							<InfoLine icon={<AiOutlinePhone/>} text={`+47 47 61 31 21`}/>
 							<InfoLine icon={<AiFillGithub/>} text={<a href="https://github.com/coow">Github.com/Coow</a>}/>
+						</div>
+						<div className="pt-16 text-xs text-gray-500">
+							<InfoLine icon={<FaReact/>} text="CV Made with React"/>
 						</div>
 					</Col>
 				</Row>
@@ -66,7 +69,7 @@ function App() {
 					className="vertical-timeline-element--work w-5/5"
 					contentStyle={{ background: 'rgb(255,255,255)', color: '#000' }}
 					contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-					date="August 2020 - Novemeber 2020"
+					date="August 2020 - November 2020"
 					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 					icon={<MdWork />}
 					visible="true"
@@ -100,11 +103,11 @@ function App() {
 						Internal Development, IT Technician, Networking and Helpdesk
 					</h4>
 					<p>
-						Worked with hosting customers enviroments on VMWare and partially Azure Stack aswell. Everything from SMB customers RDS Enviorments, to larger customers such as KPMG.
+						Worked with hosting customers environments on VMWare and Azure Stack. Everything from SMB customers RDS Environments, to larger customers such as KPMG.
 						<br /><br />
 						Created internal monitoring systems for our VMWare Clusters and AzureStack, integrating it with our Ticketing System
 						<br /><br />
-						An ELO based leaderboard when we got competetive internally with TableTennis, using our ID cards for user verification
+						An ELO based leaderboard when we got competitive internally with TableTennis, using our ID cards for user verification
 						<br /><br />
 						Tech used
 						<br />- PowerShell
@@ -175,7 +178,7 @@ function App() {
 						<h3 className="vertical-timeline-element-title">GCI Bot</h3>
 						<span className="text-black text-opacity-25">(Still in active development)</span>
 						<h4>
-							Discord bot with 100,000+ users, and moderates 300,000+ messages a month
+							Discord bot with 250,000+ users, and moderates 600,000+ messages a month
 							<br />
 							Includes a web interface for managing banned users, banned links & other settings
 							<br />
@@ -218,6 +221,7 @@ function App() {
 						<p>
 							Tech used
 							<br />- NodeJS (Discord.JS, Express)
+							<br />- React
 							<br />- Docker
 							<br />- MongoDB
 							<br />- Drone CI
